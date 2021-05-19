@@ -1,0 +1,59 @@
+Controller
+Action
+
+Dao(Data access object)
+BLogic
+
+Dto(Data transfer Objcet)
+ InputDto
+ OutPutDto
+
+Form(......)
+
+Bean(表示用）
+
+Entity(实体对象）（1entity = table）
+
+MVC
+M：data model, 
+
+JSPからDBへ
+Form(Jsp)⇒Form(Java)⇒InputDto⇒Entity⇒Table(DB)
+(       Action           )( BLogic  )(         Dao       )
+
+DBからJSPへ
+Table(DB)⇒Entity⇒OutPutDto⇒Form（入力値保持用）,Bean(Java)⇒Jsp
+
+$ ng g c abc --module app
+
+
+Jdbc
+  ①DB接続
+     conn
+  ②Sql作成
+    String sql = "SELECT ENAME FROM student where sutdentID = ?";
+  ③ sql 预编译
+	Statement stmt = conn.createStatement();
+  ④ パラメータ引き渡す
+    stmt.set(0,"1001")
+  ⑤検索結果取得
+	ResultSet rset = stmt.executeQuery(sql);
+	while (rset.next()) {
+	   Student s = new Student();
+	    s.setStudentID(rset.getString("student_id")));
+	    rset.getString(1)
+	    rset.getString(1)
+	    rset.getString(1)
+	    rset.getString(1)
+	    rset.getString(1)
+	    rset.getString(1)
+	    rset.getString(1)
+	    
+	    list.add(s)
+	}
+	rset.close();
+    
+  ⑥db切断
+     conn.close();
+
+
