@@ -1,5 +1,5 @@
 
-JSPからDBへ
+
 Form(Jsp)⇒Form(Java)⇒InputDto⇒Entity⇒Table(DB)
 (       Action           )( BLogic  )(         Dao       )
 
