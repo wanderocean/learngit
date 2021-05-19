@@ -1,21 +1,3 @@
-Controller
-Action
-
-Dao(Data access object)
-BLogic
-
-Dto(Data transfer Objcet)
- InputDto
- OutPutDto
-
-Form(......)
-
-Bean(表示用）
-
-Entity(实体对象）（1entity = table）
-
-MVC
-M：data model, 
 
 JSPからDBへ
 Form(Jsp)⇒Form(Java)⇒InputDto⇒Entity⇒Table(DB)
